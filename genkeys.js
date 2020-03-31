@@ -24,8 +24,8 @@ let jwk = jose.JWK.generateSync(
 let pub = jwk.toPEM();
 let pvt = jwk.toPEM(true);
 
-console.log(`public:\n${pub}`);
-console.log(`private:\n${pvt}`);
+console.log(`public (saved in ./public.pem):\n${pub}`);
+console.log(`private (saved in ./private.pem):\n${pvt}`);
 
 fs.writeFileSync('./private.pem', pvt);
 fs.writeFileSync('./public.pem', pub);
