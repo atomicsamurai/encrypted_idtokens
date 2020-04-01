@@ -13,7 +13,7 @@ Creates a key pair for use as CEK. Uses RSA-OAEP-256 as alg, but you can change 
 decrypts the encrypted id_token (JWE) using the private key generated above.
 
 ## How to use
-1. First, you need nodejs installed.
+1. First, you need nodejs (v12.9.0 or above) installed.
 2. Run `npm install` to get all dependencies.
 3. Run `node genkeys.js` to generate the keys and get them saved to the files `private.pem` and `public.pem`
 4. Copy the contents of `public.pem` and paste it in the `Client ID Token Public Encryption Key` parameter of your OAuth2.0 client profile in ForgeRock AM.
