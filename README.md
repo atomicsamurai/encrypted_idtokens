@@ -56,7 +56,6 @@ decrypts the encrypted id_token (JWE) using the private key generated above.
 ```
 
 # Acknowledgements
-These scripts use the excellent [jose](https://github.com/panva/jose) npm module by Filip Skokan.
-
-
+* These scripts use the excellent [jose](https://github.com/panva/jose) npm module by Filip Skokan.
+* Great blog [post](https://medium.com/@darutk/understanding-id-token-5f83f50fa02e) explaining the id_token with gory details :).
 
