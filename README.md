@@ -7,7 +7,7 @@ ForgeRock shall not be liable for any direct, indirect or consequential damages 
 Set of simple node js scripts to test generation of encrypted id_tokens using ForgeRock AM and decrypting them
 
 ## genkeys.js
-Creates a key pair for use as CEK. Uses RSA-OAEP-256 as alg, but you can change it in the code. The keys are saved as `private.pem` and `public.pem` in the current directory.
+Creates a key pair for encrypting/decrypting the CEK (content encrption key), hard coded to use RSA-OAEP-256 as `alg`, but you can change it in the code. The keys are saved as `private.pem` and `public.pem` in the current directory.
 
 ## decrypt_idtoken.js
 decrypts the encrypted id_token (JWE) using the private key generated above.
